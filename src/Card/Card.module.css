@@ -1,0 +1,58 @@
+
+/* Card back style */
+.backBox{
+    position: absolute;
+    background-color: rgb(236, 236, 236);
+    height: 60%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border: 4px solid #CBD5E1;
+    border-radius: 1rem;
+}
+
+.backBox p, i {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    z-index: 50;
+}
+
+/* Card delete style */
+.cardDeleteBox{
+    position: absolute;
+    background-color: rgb(236, 236, 236);
+    height: 20%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border: 4px solid #CBD5E1;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cardDeleteBox > span{
+    cursor: pointer;
+    margin: 0 2rem;
+    transition: all .25s;
+    border-radius: 20px;
+}
+
+.cardDeleteBox > span:hover{
+    background-color: #adb3bb;
+    padding: .1rem .2rem;
+}
+
+i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    cursor: pointer;
+}

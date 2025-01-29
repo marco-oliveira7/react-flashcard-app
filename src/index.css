@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body{
+    overflow-x: hidden;
+}
+
+.answer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.rating{
+    padding: .5rem .75rem;
+    margin: .25rem;
+    font-size: 1.35rem;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    color: #fff;
+    width: max-content;
+    font-weight: 500;
+}
+
+.bad::before{
+    content: "<1m";
+}
+
+.bad{
+    background-color: rgb(236, 61, 61);
+    display: flex;
+    flex-direction: column;
+}
+
+.medium::before{
+    content: "<5m";
+}
+
+.medium{
+    background-color: rgb(255, 165, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.good::before{
+    content: "<15m";
+}
+
+.good{
+    background-color: rgb(19, 146, 19);
+    display: flex;
+    flex-direction: column;
+}
