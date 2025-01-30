@@ -16,7 +16,7 @@ export default function Card(props) {
                             <button class="rating good" id="good">Good</button>
                           </div>`;
 
-  function DisplayAnswer(e) {
+  function DisplayAnswer() {
     backBox.className = style.backBox;
     backBox.innerHTML = answerContent;
     document.body.appendChild(backBox);
@@ -34,7 +34,7 @@ export default function Card(props) {
     const mediumButton = document.querySelector("#medium");
     const goodButton = document.querySelector("#good");
 
-    badButton.addEventListener("click", () => handleInterval(1));
+    badButton.addEventListener("click", () => handleInterval(1), console.log("sim"));
     mediumButton.addEventListener("click", () => handleInterval(5));
     goodButton.addEventListener("click", () => handleInterval(15));
   }
@@ -46,7 +46,7 @@ export default function Card(props) {
 
     if (timer === 1) {
       let seconds = 60;
-
+      
       idInterval.current = setInterval(() => {
         seconds -= 1;
         if (seconds === 0) {
